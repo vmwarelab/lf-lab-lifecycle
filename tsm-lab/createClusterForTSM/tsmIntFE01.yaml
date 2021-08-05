@@ -1,0 +1,14 @@
+{
+    "full_name": {
+        "provisionerName": "livefire",
+        "managementClusterName": "livefire-cs-sv01",
+        "clusterName": "tsm-tkgs-fe-01", 
+        "name": "tanzu-service-mesh"
+    },
+    "spec": {
+        "configurations": {
+            "enableNamespaceExclusions": false,
+            
+        }
+    }
+}

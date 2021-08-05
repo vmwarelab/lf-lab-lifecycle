@@ -1,0 +1,14 @@
+fullName:
+  managementClusterName: livefire-cs-sv01
+  name: miuser-30a
+  provisionerName: observability
+meta:
+  labels: null
+spec:
+  clusterGroupName: default
+  tkgServiceVsphere:
+    distribution:
+      version: v1.18.15+vmware.1-tkg.1.600e412
+    settings:
+      storage:
+        defaultClass: vsphere-with-kubernetes
