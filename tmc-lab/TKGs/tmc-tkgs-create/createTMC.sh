@@ -31,8 +31,8 @@ num=01  #Set 'num' to starting/first cluster number, include padded 0s.  eg: 000
 numA=a
 numB=b 
 ### Command line input options ###
-read -p "How many students? (30) " clusterCount
-read -p "Starting cluster number? (01) " num
+read -p "How many students?" clusterCount
+read -p "Starting cluster number?" num
  
 ### Do not change these variables ###
 max=$(((10#$num)+clusterCount-1))
@@ -63,11 +63,11 @@ do
         echo "$clusterNameUpGradeB is provisioning..."
 
         clusterNameUseA="$clusterNameBase"-"$clusterNum"-depa
-        tmc cluster create -t tkgs -n $clusterNameUseA -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-xlarge --instance-type best-effort-small -q 3
+        tmc cluster create -t tkgs -n $clusterNameUseA -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-large --instance-type best-effort-small -q 3
         echo "$clusterNameUseA is provisioning..."
 
         clusterNameUseB="$clusterNameBase"-"$clusterNum"-depb
-        tmc cluster create -t tkgs -n $clusterNameUseB -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-xlarge --instance-type best-effort-small -q 3
+        tmc cluster create -t tkgs -n $clusterNameUseB -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-large --instance-type best-effort-small -q 3
         echo "$clusterNameUseB is provisioning..."
 done
  
