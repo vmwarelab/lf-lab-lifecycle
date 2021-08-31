@@ -1,0 +1,1160 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-07-27T16:19:44Z",
+                "labels": {
+                    "istio-injection": "enabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kube-apiserver",
+                        "operation": "Update",
+                        "time": "2021-07-27T16:19:44Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-08T06:24:41Z"
+                    }
+                ],
+                "name": "default",
+                "resourceVersion": "11549845",
+                "selfLink": "/api/v1/namespaces/default",
+                "uid": "53b8c826-f46c-41ce-afde-95516f547b74"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-07-27T16:30:37Z",
+                "labels": {
+                    "istio-injection": "disabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {}
+                            },
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "manager",
+                        "operation": "Update",
+                        "time": "2021-07-27T16:30:37Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-08T06:24:48Z"
+                    }
+                ],
+                "name": "gatekeeper-system",
+                "resourceVersion": "12131609",
+                "selfLink": "/api/v1/namespaces/gatekeeper-system",
+                "uid": "4ce17715-491d-4af5-be31-d2bb4c8e7ce3"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{},\"labels\":{\"istio-injection\":\"disabled\"},\"name\":\"istio-system\"}}\n"
+                },
+                "creationTimestamp": "2021-08-08T06:25:10Z",
+                "labels": {
+                    "istio-injection": "disabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            },
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kubectl",
+                        "operation": "Update",
+                        "time": "2021-08-08T06:25:10Z"
+                    }
+                ],
+                "name": "istio-system",
+                "resourceVersion": "11550383",
+                "selfLink": "/api/v1/namespaces/istio-system",
+                "uid": "a199eba1-9427-40fc-bf66-3b913d1a8abf"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-07-27T16:19:43Z",
+                "labels": {
+                    "istio-injection": "disabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kube-apiserver",
+                        "operation": "Update",
+                        "time": "2021-07-27T16:19:43Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-08T06:24:41Z"
+                    }
+                ],
+                "name": "kube-node-lease",
+                "resourceVersion": "11549843",
+                "selfLink": "/api/v1/namespaces/kube-node-lease",
+                "uid": "98e1a8f3-d8e3-4a2d-b5f2-862701c2146f"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-07-27T16:19:43Z",
+                "labels": {
+                    "istio-injection": "disabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kube-apiserver",
+                        "operation": "Update",
+                        "time": "2021-07-27T16:19:43Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-08T06:24:41Z"
+                    }
+                ],
+                "name": "kube-public",
+                "resourceVersion": "11549846",
+                "selfLink": "/api/v1/namespaces/kube-public",
+                "uid": "92fddf18-ef3e-48d5-8ddc-8851b1ced63b"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-07-27T16:19:43Z",
+                "labels": {
+                    "admission.gatekeeper.sh/ignore": "system",
+                    "istio-injection": "disabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kube-apiserver",
+                        "operation": "Update",
+                        "time": "2021-07-27T16:19:43Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-08T06:24:47Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:admission.gatekeeper.sh/ignore": {}
+                                }
+                            }
+                        },
+                        "manager": "manager",
+                        "operation": "Update",
+                        "time": "2021-08-09T00:48:50Z"
+                    }
+                ],
+                "name": "kube-system",
+                "resourceVersion": "12410385",
+                "selfLink": "/api/v1/namespaces/kube-system",
+                "uid": "08a02729-a121-4604-bc58-3e676928126c"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-08-11T02:08:38Z",
+                "labels": {
+                    "istio-injection": "enabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kubectl-create",
+                        "operation": "Update",
+                        "time": "2021-08-11T02:08:38Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "kubectl-label",
+                        "operation": "Update",
+                        "time": "2021-08-11T02:08:38Z"
+                    }
+                ],
+                "name": "miuser002",
+                "resourceVersion": "15032957",
+                "selfLink": "/api/v1/namespaces/miuser002",
+                "uid": "31851cc8-8868-4c48-889e-b2e007575b12"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-08-10T05:31:52Z",
+                "labels": {
+                    "istio-injection": "enabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-10T05:31:52Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kubectl-create",
+                        "operation": "Update",
+                        "time": "2021-08-10T05:31:52Z"
+                    }
+                ],
+                "name": "miuser007",
+                "resourceVersion": "13937433",
+                "selfLink": "/api/v1/namespaces/miuser007",
+                "uid": "ae3319fd-50b2-47b5-9481-0e01e697851a"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-08-10T08:38:44Z",
+                "labels": {
+                    "istio-injection": "enabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-10T08:38:44Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kubectl-create",
+                        "operation": "Update",
+                        "time": "2021-08-10T08:38:44Z"
+                    }
+                ],
+                "name": "miuser008",
+                "resourceVersion": "14103967",
+                "selfLink": "/api/v1/namespaces/miuser008",
+                "uid": "9dfcfe6b-eab6-4123-bfea-99abd60ceaeb"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-08-10T05:37:04Z",
+                "labels": {
+                    "istio-injection": "enabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-10T05:37:04Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kubectl-create",
+                        "operation": "Update",
+                        "time": "2021-08-10T05:37:04Z"
+                    }
+                ],
+                "name": "miuser012",
+                "resourceVersion": "13942150",
+                "selfLink": "/api/v1/namespaces/miuser012",
+                "uid": "da63b283-2d63-4285-893b-2b4b57d50f08"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-08-10T19:09:48Z",
+                "labels": {
+                    "istio-injection": "enabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kubectl-create",
+                        "operation": "Update",
+                        "time": "2021-08-10T19:09:48Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-10T19:09:49Z"
+                    }
+                ],
+                "name": "miuser014",
+                "resourceVersion": "14661488",
+                "selfLink": "/api/v1/namespaces/miuser014",
+                "uid": "011896df-4878-4907-8b2b-a7ca2c713d5b"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-08-10T05:41:27Z",
+                "labels": {
+                    "istio-injection": "enabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-10T05:41:27Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kubectl-create",
+                        "operation": "Update",
+                        "time": "2021-08-10T05:41:27Z"
+                    }
+                ],
+                "name": "miuser016",
+                "resourceVersion": "13946359",
+                "selfLink": "/api/v1/namespaces/miuser016",
+                "uid": "1be468d8-9f6a-403d-bce6-f5d895a0fe81"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-08-10T05:27:16Z",
+                "labels": {
+                    "istio-injection": "enabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-10T05:27:16Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kubectl-create",
+                        "operation": "Update",
+                        "time": "2021-08-10T05:27:16Z"
+                    }
+                ],
+                "name": "miuser019",
+                "resourceVersion": "13933413",
+                "selfLink": "/api/v1/namespaces/miuser019",
+                "uid": "bd7adb1d-e9d2-44c6-9186-155f92c9a4e1"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-08-10T06:39:34Z",
+                "labels": {
+                    "istio-injection": "enabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kubectl-create",
+                        "operation": "Update",
+                        "time": "2021-08-10T06:39:34Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-10T06:39:35Z"
+                    }
+                ],
+                "name": "miuser020",
+                "resourceVersion": "13997487",
+                "selfLink": "/api/v1/namespaces/miuser020",
+                "uid": "0c0fbe6f-43e2-4b1c-838b-b910fc9e481e"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-08-10T07:22:52Z",
+                "labels": {
+                    "istio-injection": "enabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-10T07:22:52Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kubectl-create",
+                        "operation": "Update",
+                        "time": "2021-08-10T07:22:52Z"
+                    }
+                ],
+                "name": "miuser022",
+                "resourceVersion": "14036345",
+                "selfLink": "/api/v1/namespaces/miuser022",
+                "uid": "ad3a04db-8d4f-4144-beab-f8c7c01c937c"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-08-10T18:57:30Z",
+                "labels": {
+                    "istio-injection": "enabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kubectl-create",
+                        "operation": "Update",
+                        "time": "2021-08-10T18:57:30Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-10T18:57:31Z"
+                    }
+                ],
+                "name": "miuser023",
+                "resourceVersion": "14650854",
+                "selfLink": "/api/v1/namespaces/miuser023",
+                "uid": "6bfdee4d-8596-4416-b5d9-b3bd2b3c1bc0"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{},\"name\":\"vmware-system-auth\"}}\n"
+                },
+                "creationTimestamp": "2021-07-27T16:19:47Z",
+                "labels": {
+                    "istio-injection": "disabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                                }
+                            },
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "kubectl-client-side-apply",
+                        "operation": "Update",
+                        "time": "2021-07-27T16:19:47Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-17T17:06:17Z"
+                    }
+                ],
+                "name": "vmware-system-auth",
+                "resourceVersion": "23630801",
+                "selfLink": "/api/v1/namespaces/vmware-system-auth",
+                "uid": "0c4f8059-4721-469e-a9b0-f3c005f52d84"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-07-27T16:19:59Z",
+                "labels": {
+                    "istio-injection": "disabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "manager",
+                        "operation": "Update",
+                        "time": "2021-07-27T16:19:59Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-17T17:06:16Z"
+                    }
+                ],
+                "name": "vmware-system-cloud-provider",
+                "resourceVersion": "23630780",
+                "selfLink": "/api/v1/namespaces/vmware-system-cloud-provider",
+                "uid": "ca0a04f6-c883-4194-88bb-2031d2ace080"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-07-27T16:20:01Z",
+                "labels": {
+                    "istio-injection": "disabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "manager",
+                        "operation": "Update",
+                        "time": "2021-07-27T16:20:01Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-17T17:06:17Z"
+                    }
+                ],
+                "name": "vmware-system-csi",
+                "resourceVersion": "23630784",
+                "selfLink": "/api/v1/namespaces/vmware-system-csi",
+                "uid": "8b3f62f0-1bc1-4ed3-b61c-2b3ffb552c81"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "creationTimestamp": "2021-07-27T16:29:49Z",
+                "labels": {
+                    "admission.gatekeeper.sh/ignore": "system",
+                    "istio-injection": "disabled"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-08T06:24:51Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:admission.gatekeeper.sh/ignore": {}
+                                }
+                            },
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "manager",
+                        "operation": "Update",
+                        "time": "2021-08-09T00:48:50Z"
+                    }
+                ],
+                "name": "vmware-system-tmc",
+                "resourceVersion": "12410384",
+                "selfLink": "/api/v1/namespaces/vmware-system-tmc",
+                "uid": "4cc5232f-cd14-4fae-ab86-80b359766eb4"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"tmc.cloud.vmware.com/extension-version\":\"20210701205526355-126e2c1d97735b83650425244adb8b9806753119\"},\"labels\":{\"owner\":\"operator-deployer\",\"tmc-extension-name\":\"tsm-operator-extension\",\"tmc-extension-version\":\"20210701205526355-126e2c1d97735b83650425244adb8b9806753119\",\"tmc.cloud.vmware.com/managed\":\"true\"},\"name\":\"vmware-system-tsm\",\"ownerReferences\":[{\"apiVersion\":\"clusters.tmc.cloud.vmware.com/v1alpha1\",\"blockOwnerDeletion\":true,\"controller\":true,\"kind\":\"ExtensionResourceOwner\",\"name\":\"vmware-system-tsm-4282464276614144742\",\"uid\":\"5937e238-c2e0-4eb6-9f87-fee6c9e6e14e\"}]}}\n",
+                    "tmc.cloud.vmware.com/extension-version": "20210701205526355-126e2c1d97735b83650425244adb8b9806753119"
+                },
+                "creationTimestamp": "2021-08-08T19:34:33Z",
+                "labels": {
+                    "control-plane": "extension-manager",
+                    "controller-tools.k8s.io": "1.0",
+                    "istio-injection": "disabled",
+                    "owner": "operator-deployer",
+                    "tmc-extension": "true",
+                    "tmc-extension-name": "tsm-operator-extension",
+                    "tmc-extension-version": "20210701205526355-126e2c1d97735b83650425244adb8b9806753119",
+                    "tmc.cloud.vmware.com/managed": "true"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:kubectl.kubernetes.io/last-applied-configuration": {},
+                                    "f:tmc.cloud.vmware.com/extension-version": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:control-plane": {},
+                                    "f:controller-tools.k8s.io": {},
+                                    "f:owner": {},
+                                    "f:tmc-extension": {},
+                                    "f:tmc-extension-name": {},
+                                    "f:tmc-extension-version": {},
+                                    "f:tmc.cloud.vmware.com/managed": {}
+                                },
+                                "f:ownerReferences": {
+                                    ".": {},
+                                    "k:{\"uid\":\"5937e238-c2e0-4eb6-9f87-fee6c9e6e14e\"}": {
+                                        ".": {},
+                                        "f:apiVersion": {},
+                                        "f:blockOwnerDeletion": {},
+                                        "f:controller": {},
+                                        "f:kind": {},
+                                        "f:name": {},
+                                        "f:uid": {}
+                                    }
+                                }
+                            },
+                            "f:status": {
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "manager",
+                        "operation": "Update",
+                        "time": "2021-08-08T19:34:33Z"
+                    },
+                    {
+                        "apiVersion": "v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    "f:istio-injection": {}
+                                }
+                            }
+                        },
+                        "manager": "k8s-cluster-manager",
+                        "operation": "Update",
+                        "time": "2021-08-08T19:36:03Z"
+                    }
+                ],
+                "name": "vmware-system-tsm",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "clusters.tmc.cloud.vmware.com/v1alpha1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ExtensionResourceOwner",
+                        "name": "vmware-system-tsm-4282464276614144742",
+                        "uid": "5937e238-c2e0-4eb6-9f87-fee6c9e6e14e"
+                    }
+                ],
+                "resourceVersion": "12131735",
+                "selfLink": "/api/v1/namespaces/vmware-system-tsm",
+                "uid": "56969d9e-6234-49e0-8f4e-6171fea08981"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": "",
+        "selfLink": ""
+    }
+}

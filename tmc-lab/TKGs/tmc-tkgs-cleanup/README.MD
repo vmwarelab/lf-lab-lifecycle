@@ -30,9 +30,23 @@ k get pvc -o json -n observability | jq ".items[].metadata.name" | sed 's/"//g' 
 ```
 
 
-
-
 ```
 tmc clustergroup list -o json | jq ".clusterGroups[].fullName.name | select (.clusterGroups[].meta.labels.class=bespin)" > text.txt
 ```
 
+
+Data Protection Target location Cleanup
+
+```
+tmc dataprotection provider backuplocation list
+
+```
+then do delete for each in the list 
+
+example
+
+```
+tmc dataprotection provider backuplocation delete mrottlander-tl
+```
+
+Check in the UI, hit refresh if needed to confirm

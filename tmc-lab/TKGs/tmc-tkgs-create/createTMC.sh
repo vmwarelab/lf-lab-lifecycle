@@ -54,19 +54,19 @@ set -e
 ### Loop to create group of TMC clusters
 for clusterNum in $(seq -w $num $max)
 do
-        clusterNameUpgradeA="$clusterNameBase"-"$clusterNum"-ua
+        clusterNameUpgradeA="$clusterNameBase"-"$clusterNum"-upgrade
         tmc cluster create -t tkgs -n $clusterNameUpgradeA -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-xsmall --instance-type best-effort-xsmall -q 1
         echo "$clusterNameUpgradeA is provisioning..."
 
-        clusterNameUpGradeB="$clusterNameBase"-"$clusterNum"-ub
+        clusterNameUpGradeB="$clusterNameBase"-"$clusterNum"-scale
         tmc cluster create -t tkgs -n $clusterNameUpGradeB -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-xsmall --instance-type best-effort-xsmall -q 1
         echo "$clusterNameUpGradeB is provisioning..."
 
-        clusterNameUseA="$clusterNameBase"-"$clusterNum"-depa
+        clusterNameUseA="$clusterNameBase"-"$clusterNum"-deploya
         tmc cluster create -t tkgs -n $clusterNameUseA -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-large --instance-type best-effort-small -q 3
         echo "$clusterNameUseA is provisioning..."
 
-        clusterNameUseB="$clusterNameBase"-"$clusterNum"-depb
+        clusterNameUseB="$clusterNameBase"-"$clusterNum"-deployb
         tmc cluster create -t tkgs -n $clusterNameUseB -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-large --instance-type best-effort-small -q 3
         echo "$clusterNameUseB is provisioning..."
 done
