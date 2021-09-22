@@ -10,8 +10,8 @@ provisioner="tsm-lab"
 management="wcp-livefire-lab"
 clusterGroupName="tsm-lab-cg"
 k8sVersion="v1.19.7+vmware.1-tkg.1.fc82c41"
-frontEnd=fe-02
-backEnd=be-02
+frontEnd=fe-01
+backEnd=be-01
 #kubePath=/tmp
 getPath=/mnt/attendee-share/tanzu/tsm-lab-files
 placePath=/run/user/1139803268/gvfs/smb-share:server=hzn-fs-01.livefire.lab,share=attendee-share/tanzu/tsm-lab-files

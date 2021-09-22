@@ -1,0 +1,1090 @@
+{
+ "backupLocations": [
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FCRN6WJK6Y67FK7VTYV21RCN",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-10T18:29:17.655563Z",
+    "updateTime": "2021-08-10T18:37:54.807626Z",
+    "labels": {
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "angkarn-backup"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "angkarn-class-prod"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T18:37:54.807621818Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T18:36:44.265740248Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01EBS05CD0EKMJPWH2YK4FVRBF",
+    "resourceVersion": "1",
+    "creationTime": "2020-06-26T19:02:42.369723Z",
+    "updateTime": "2021-07-08T11:07:15.327958Z",
+    "labels": {
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "aws-dp"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "tito-clusters"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-07-08T11:07:15.327953210Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-07-08T11:07:15.287227307Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FCQ6J46YQ4MK8D23PYA72RZB",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-10T04:54:03.362876Z",
+    "updateTime": "2021-08-10T04:54:03.379412Z",
+    "labels": {
+     "tmc.cloud.vmware.com/creator": "csecombe",
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "csecombe-tl"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "csecombe-class-prod"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T04:54:03.379407959Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T04:54:02.718398296Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FE0JJB2J74C6PHT900ZJVZS0",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-26T06:32:45.205288Z",
+    "updateTime": "2021-08-26T06:32:45.217501Z",
+    "labels": {
+     "tmc.cloud.vmware.com/creator": "dmanconi",
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "dmanconi-tl"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "dmanconi-class-prod"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-26T06:32:45.217498092Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-26T06:32:44.370957920Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FCQ7GK8JRN0W3P4RAFGHPP5W",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-10T05:10:41.831396Z",
+    "updateTime": "2021-08-10T05:10:41.845731Z",
+    "labels": {
+     "tmc.cloud.vmware.com/creator": "egubi",
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "egubi-tl"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "egubi-class-prod"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T05:10:41.845726885Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T05:10:41.170569781Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FE0NHQRHNRY2JKC9SSYT4D1J",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-26T07:24:51.258150Z",
+    "updateTime": "2021-08-26T07:29:45.159300Z",
+    "labels": {
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "mfu-tl"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "mfu-class-prod"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-26T07:29:45.159295651Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-26T07:28:19.680591455Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FCQ5ZX7F6ZMC2YWSAMW15P7P",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-10T04:44:05.945628Z",
+    "updateTime": "2021-08-10T04:44:32.232860Z",
+    "labels": {
+     "tmc.cloud.vmware.com/creator": "mkumar2",
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "mkumar-target"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "mkumar-class-prod"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T04:44:32.232855479Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T04:44:05.743405172Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FE0H5655DX3P714E4M0VRWTN",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-26T06:08:05.320494Z",
+    "updateTime": "2021-08-26T06:08:05.335333Z",
+    "labels": {
+     "tmc.cloud.vmware.com/creator": "pjames",
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "pjames-tl"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "pjames-class-prod"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-26T06:08:05.335329641Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-26T06:08:04.773260202Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FCQA7T875BFZQPFZTT3H1K3Y",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-10T05:58:19.275248Z",
+    "updateTime": "2021-08-10T05:58:56.150552Z",
+    "labels": {
+     "tmc.cloud.vmware.com/creator": "pponnam_ap.logicalis.com",
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "pponnam-dataprotection"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "pponnam-class-prod"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T05:58:56.150546712Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T05:58:19.143313977Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FCQ2RP90P4R2JC3GJW9MPDT8",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-10T03:47:44.711645Z",
+    "updateTime": "2021-08-10T03:47:44.722480Z",
+    "labels": {
+     "tmc.cloud.vmware.com/creator": "rnaufal",
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "rnaufal-tl"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "rnaufal-class-prod"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T03:47:44.722474634Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T03:47:43.520264073Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FE0VC4TTVM4PVC8BM73D1PHV",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-26T09:06:39.260782Z",
+    "updateTime": "2021-08-26T09:06:49.369448Z",
+    "labels": {
+     "tmc.cloud.vmware.com/creator": "robys",
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "robysharma-ti"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "robysharma-class-prod"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-26T09:06:49.369442924Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-26T09:06:38.554217629Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FCQ8HSGSYHJANGCE07102ZZ0",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-10T05:28:49.581268Z",
+    "updateTime": "2021-08-10T05:28:49.593265Z",
+    "labels": {
+     "tmc.cloud.vmware.com/creator": "roshanj",
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "ros-tl"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "rosdb-class"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T05:28:49.593259997Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T05:28:48.921416382Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FCQ01YZ2HJCVTMCMGZ6SB1HF",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-10T03:00:22.299103Z",
+    "updateTime": "2021-08-10T03:07:41.335625Z",
+    "labels": {
+     "tmc.cloud.vmware.com/creator": "suraj.kendhey_ibm.com",
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "skendhey-tl"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "skendhey-class-prod"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T03:07:41.335620890Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T03:00:21.602103034Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FCSCM9JS1MPEFAXD3VG56KNY",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-11T01:18:34.835444Z",
+    "updateTime": "2021-08-11T01:19:40.259789Z",
+    "labels": {
+     "tmc.cloud.vmware.com/creator": "tchaiwattana",
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "tchaiwattana-tl"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "tchaiwattana-class-prod"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-11T01:19:40.259784491Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-11T01:18:34.073343930Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FCP12KQTRDA14683730ZJ734",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-09T17:58:57.745686Z",
+    "updateTime": "2021-08-09T18:00:58.851938Z",
+    "labels": {
+     "tmc.cloud.vmware.com/creator": "toddb",
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "toddb-tl"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "toddb-class"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-09T18:00:58.851931736Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-09T17:58:57.018380860Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  },
+  {
+   "type": {
+    "kind": "BackupLocation",
+    "version": "v1alpha1",
+    "package": "vmware.tanzu.manage.v1alpha1.dataprotection.provider.backuplocation"
+   },
+   "meta": {
+    "uid": "01FCRQQ7E66H0HFNQF3PJFHJQK",
+    "resourceVersion": "1",
+    "creationTime": "2021-08-10T19:13:10.763216Z",
+    "updateTime": "2021-08-10T19:13:10.773955Z",
+    "labels": {
+     "tmc.cloud.vmware.com/creator": "angkarn.s_global.ntt",
+     "tmc.cloud.vmware.com/managed": "true"
+    }
+   },
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "providerName": "tmc",
+    "name": "tsm-bak"
+   },
+   "spec": {
+    "targetProvider": "AWS",
+    "config": {
+     "s3Config": {
+
+     }
+    },
+    "bucket": "vmware-tmc-dp-d37ce758",
+    "region": "us-west-2",
+    "credential": {
+     "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+     "name": "aws-dp"
+    },
+    "assignedGroups": [
+     {
+      "clustergroup": {
+       "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+       "name": "tsm-lab-cg"
+      }
+     }
+    ]
+   },
+   "status": {
+    "phase": "READY",
+    "conditions": {
+     "ready": {
+      "type": "ready",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T19:13:10.773951300Z"
+     },
+     "scheduled": {
+      "type": "scheduled",
+      "status": "TRUE",
+      "severity": "INFO",
+      "lastTransitionTime": "2021-08-10T19:13:10.086948709Z"
+     }
+    },
+    "availablePhases": [
+     "PHASE_UNSPECIFIED",
+     "PENDING",
+     "CREATING",
+     "READY"
+    ],
+    "type": "MANAGED"
+   }
+  }
+ ],
+ "totalCount": "16"
+}

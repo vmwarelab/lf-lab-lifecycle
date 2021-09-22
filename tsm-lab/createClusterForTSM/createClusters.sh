@@ -10,8 +10,8 @@ provisioner="tsm-lab"
 management="wcp-livefire-lab"
 clusterGroupName="tsm-lab-cg"
 k8sVersion="v1.19.7+vmware.1-tkg.1.fc82c41"
-frontEnd=fe-02
-backEnd=be-02
+frontEnd=fe-01
+backEnd=be-01
 feWorkerCount=14
 beWorkerCount=7
 ###
