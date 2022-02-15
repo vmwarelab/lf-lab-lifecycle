@@ -35,6 +35,8 @@ Data Protection Target location Cleanup
 tmc dataprotection provider backuplocation list -o json | jq ".backupLocations[].fullName.name" | sed 's/"//g' > backupLoc.txt
 
 ```
+
+k delete 
 then do delete for each in the list 
 
 example
@@ -44,6 +46,12 @@ tmc dataprotection provider backuplocation delete mrottlander-tl
 ```
 
 Check in the UI, hit refresh if needed to confirm 
+
+```
+Clean Up PVCs
+```
+
+k get pvc -o json -n observability | jq ".items[].metadata.name" | sed 's/"//g' > observePVC.txt
 
 
 

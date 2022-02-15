@@ -1,7 +1,7 @@
-mduser-17-ub
-mduser-19-depb
-mduser-24-ua
-mduser-27-depa
-mduser-27-ub
-mduser-29-depa
-mduser-30-ub
+miuser-17-scale
+miuser-17-upgrade
+miuser-16-upgrade
+miuser-15-upgrade
+miuser-02-upgrade
+miuser-23-upgrade
+miuser-22-scale

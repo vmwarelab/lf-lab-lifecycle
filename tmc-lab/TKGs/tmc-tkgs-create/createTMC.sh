@@ -21,7 +21,9 @@ echo "$clusterName is provisioning..."
 
 ### Hard coded variables ###
 clusterNameBase="miuser"
+#clusterNameBase="aluser"
 provisioner="observability"
+#provisioner="infraclass"
 management="wcp-livefire-lab"
 #clusterNameBase="realylongnameherenow"
 clusterGroupName="default"

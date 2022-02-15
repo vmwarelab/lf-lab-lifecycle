@@ -8,8 +8,8 @@ provisioner="observability"
 management="wcp-livefire-lab"
 clusterGroupName="default"
 k8sVersion="v1.18.15+vmware.1-tkg.1.600e412" 
-#filename=deadList.txt
-filename=unhealthy.txt
+filename=deadList.txt
+#filename=unhealthy.txt
 declare -a listArr
 listArr=(`cat "$filename"`)
 len=${#listArr[@]}
