@@ -27,7 +27,7 @@ provisioner="observability"
 management="wcp-livefire-lab"
 #clusterNameBase="realylongnameherenow"
 clusterGroupName="default"
-k8sVersion="v1.18.15+vmware.1-tkg.1.600e412"
+k8sVersion="v1.20.2+vmware.1-tkg.1.1d4f79a"
 clusterCount=30  #Set 'clusterCount' to number of clusters to build.
 num=01  #Set 'num' to starting/first cluster number, include padded 0s.  eg: 00013
 numA=a
@@ -56,24 +56,23 @@ set -e
 ### Loop to create group of TMC clusters
 for clusterNum in $(seq -w $num $max)
 do
-        clusterNameUpgradeA="$clusterNameBase"-"$clusterNum"-upgrade
-        tmc cluster create -t tkgs -n $clusterNameUpgradeA -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-xsmall --instance-type best-effort-xsmall -q 1
-        echo "$clusterNameUpgradeA is provisioning..."
+        # clusterNameUpgradeA="$clusterNameBase"-"$clusterNum"-upgrade
+        # tmc cluster create -t tkgs -n $clusterNameUpgradeA -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-xsmall --instance-type best-effort-xsmall -q 1
+        # echo "$clusterNameUpgradeA is provisioning..."
 
-        clusterNameUpGradeB="$clusterNameBase"-"$clusterNum"-scale
-        tmc cluster create -t tkgs -n $clusterNameUpGradeB -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-xsmall --instance-type best-effort-xsmall -q 1
-        echo "$clusterNameUpGradeB is provisioning..."
+        # clusterNameUpGradeB="$clusterNameBase"-"$clusterNum"-scale
+        # tmc cluster create -t tkgs -n $clusterNameUpGradeB -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-xsmall --instance-type best-effort-xsmall -q 1
+        # echo "$clusterNameUpGradeB is provisioning..."
 
-        clusterNameUseA="$clusterNameBase"-"$clusterNum"-deploya
+        clusterNameUseA="$clusterNameBase"-"$clusterNum"-depa
         tmc cluster create -t tkgs -n $clusterNameUseA -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-large --instance-type best-effort-small -q 3
         echo "$clusterNameUseA is provisioning..."
 
-        clusterNameUseB="$clusterNameBase"-"$clusterNum"-deployb
+        clusterNameUseB="$clusterNameBase"-"$clusterNum"-depb
         tmc cluster create -t tkgs -n $clusterNameUseB -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --version $k8sVersion --management-cluster-name $management --provisioner-name $provisioner --worker-instance-type best-effort-large --instance-type best-effort-small -q 3
         echo "$clusterNameUseB is provisioning..."
 done
  
-
 
 
 

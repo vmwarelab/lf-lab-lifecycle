@@ -1,0 +1,8 @@
+apiVersion: installers.tmc.cloud.vmware.com/v1alpha1
+kind: AgentInstall
+metadata:
+  name: tmc-agent-installer-config
+  namespace: svc-tmc-c2019
+spec:
+  operation: INSTALL
+  registrationLink: https://livefirelabs.tmc.cloud.vmware.com/installer?id=d1d1617c39c5fe5e36d5590f9f759e1e89e38deeaf7ee3b2c3dbc46072405f4d&source=registration&type=tkgs

@@ -6,14 +6,14 @@
  
 ### Hard coded variables ###
 clusterNameBase="tsm-tkgs"
-provisioner="tsm-lab"
+provisioner="observability"
 management="wcp-livefire-lab"
 clusterGroupName="tsm-lab-cg"
 k8sVersion="v1.19.7+vmware.1-tkg.1.fc82c41"
 frontEnd=fe-01
 backEnd=be-01
-feWorkerCount=14
-beWorkerCount=7
+feWorkerCount=2 #For Lab use - 14
+beWorkerCount=1 # For Lab use - 7
 ###
 ### Script Body
 ###

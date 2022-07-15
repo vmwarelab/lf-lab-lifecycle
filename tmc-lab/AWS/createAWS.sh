@@ -60,9 +60,9 @@ do
         createAWS $deployName $management $provisioner $account $sshKeyName $regionAWS $poolName $k8sVersion $nodeType $workerCount
         echo "$clusterUNameA is provisioning..."
 
-        deployName="$clusterNameBase"-"$clusterNum"-scale
-        createAWS $deployName $management $provisioner $account $sshKeyName $regionAWS $poolName $k8sVersion $nodeType $workerCount     
-        echo "$clusterUNameB is provisioning..."
+        # deployName="$clusterNameBase"-"$clusterNum"-scale
+        # createAWS $deployName $management $provisioner $account $sshKeyName $regionAWS $poolName $k8sVersion $nodeType $workerCount     
+        # echo "$clusterUNameB is provisioning..."
 
         date > clusterCreateTime.txt
 

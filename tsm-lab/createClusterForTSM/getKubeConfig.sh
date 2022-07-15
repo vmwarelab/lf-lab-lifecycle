@@ -49,7 +49,7 @@ case $whichCluster in
     front)
         clusterNameA="$clusterNameBase-$frontEnd"
         #rm ~/Downloads/kubeconfig-$clusterNameA.yml
-        remkube $clusterNameA
+        # remkube $clusterNameA
         tmc cluster auth kubeconfig get $clusterNameA -m $management -p $provisioner > $placePath/kubeconfig-$clusterNameA.yml
         echo "Got $clusterNameA kubeconfig"
         echo "Path to file is " $getPath/kubeconfig-$clusterNameA.yml
