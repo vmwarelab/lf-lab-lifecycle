@@ -1,0 +1,25 @@
+apiVersion: run.tanzu.vmware.com/v1alpha1
+kind: TanzuKubernetesCluster                   
+metadata:
+  # Name of cluster example tkg-cluster-01
+  name: <clusterCount>                      
+  # vSphere Workload Management Nameapace to deploy cluster to
+  namespace: <changenamespace>                       
+spec:
+  distribution:
+    version: v1.20.2+vmware.1-tkg.1.1d4f79a                             
+  topology:
+    controlPlane:
+      # Number of Nodes in Controlplane
+      count: 1                                 
+      #
+      class: <nodesize>               
+      #vSphere storage class to use get this from vsphere admin  
+      storageClass: vsphere-with-kubernetes 
+    workers:
+      #
+      count: <nodecount>                
+      #                 
+      class: <nodesize>     
+      #vSphere storage class to use get this from vsphere admin
+      storageClass: vsphere-with-kubernetes 
